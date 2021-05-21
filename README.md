@@ -13,3 +13,9 @@ bien
 gracias
 por
 preguntar
+
+que 
+chevere 
+es 
+terminar 
+espol
