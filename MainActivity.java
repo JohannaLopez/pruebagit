@@ -121,10 +121,12 @@ public class MainActivity extends BaseActivity {
         });
     }
 
-    private void inicializarComponentes(){
+   private void inicializarComponentes(String primerParametro, String segundoParametro){
         btnDatosPersonales = (Button)findViewById(R.id.datos_personales);
         btnRuc = (Button)findViewById(R.id.ruc);
         btnPredioCatastrado = (Button)findViewById(R.id.predio_catastrado);
+        btnAgregadoParaConflicto = (Button)findViewById(R.id.agregadoParaConflicto);
+
     }
 
     private void obtenerDataBase(){
