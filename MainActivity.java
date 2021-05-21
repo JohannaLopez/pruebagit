@@ -130,20 +130,13 @@ public class MainActivity extends BaseActivity {
         btnPredioCatastrado = (Button)findViewById(R.id.predio_catastrado);
     }
 
-<<<<<<< HEAD
+
     private void obtenerDataBase(String parametroJanina){
         perfilRepository = PerfilRepository.getInstance(AppDatabase.getInstance(contexto).perfilDao());
         perfil = perfilRepository.getPerfil();
 		perfilRepository = PerfilRepository.getInstance(AppDatabase.getInstance(contexto).perfilDao());
 		perfilRepository = PerfilRepository.getInstance(AppDatabase.getInstance(contexto).perfilDao());
-
-=======
-    private void obtenerDataBase(int x){
-        perfilRepository = PerfilRepository.getInstance(AppDatabase.getInstance(contexto).perfilDao());
-        perfil = perfilRepository.getPerfil();
-		perfilRepository = PerfilRepository.getInstance(AppDatabase.getInstance(contexto).perfilDao());
-        perfil = perfilRepository.getPerfil();
->>>>>>> b816c638d2d5d737c78da7c64947a6cbcf2aedb8
+		
     }
 
     /**
