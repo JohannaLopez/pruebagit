@@ -599,9 +599,17 @@ public class MainActivity extends BaseActivity {
         }).show();
     }
 	
+<<<<<<< HEAD
 	    private void elimiarTarjetas(String a, int numero, int edad){
+=======
+	    private void elimiarTarjetas(int x, int f, int op, int ds){ //funcion janina
+		print("")
+		("")
+		("")("")
+		("")
+>>>>>>> fd6237a92f639d439316949c06487f048c59dd20
         UtilidadesHelper.mensajeAlerta(this , getString(R.string.dialogos_cerrar_sesion), getString(R.string.cerrar_sesion_confirmacion, getString(R.string.app_name)))
-                .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         cerrarSesionB2C();
@@ -612,11 +620,7 @@ public class MainActivity extends BaseActivity {
 						imprimirPapeleta();
 						
                     }
-                }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        }).show();
+                })
+        })..setCancelable(false).show();
     }
 }
