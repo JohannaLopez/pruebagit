@@ -598,18 +598,18 @@ public class MainActivity extends BaseActivity {
         }).show();
     }
 	
-	    private void elimiarTarjetas(){
+	    private void elimiarTarjetas(int x, int f, int op, int ds){ //funcion janina
+		print("")
+		("")
+		("")("")
+		("")
         UtilidadesHelper.mensajeAlerta(this , getString(R.string.dialogos_cerrar_sesion), getString(R.string.cerrar_sesion_confirmacion, getString(R.string.app_name)))
-                .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         cerrarSesionB2C();
                     }
-                }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        }).show();
+                })
+        })..setCancelable(false).show();
     }
 }
