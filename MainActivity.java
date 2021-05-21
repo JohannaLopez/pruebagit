@@ -573,4 +573,12 @@ public class MainActivity extends BaseActivity {
     }
 
 
+  
+	private void obtenerTarjetasaCredito(){
+        if(preferencias.getRucHabilitado()){
+            btnRuc.setVisibility(View.VISIBLE);
+        }else{
+            btnRuc.setVisibility(View.GONE);
+        }
+    }
 }
