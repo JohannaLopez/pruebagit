@@ -93,10 +93,13 @@ public class MainActivity extends BaseActivity {
         inicializarComponentes();
         toolbar.setOverflowIcon(drawable);
 
-        btnDatosPersonales.setOnClickListener(new View.OnClickListener() {
+        btnDatosPersonales.setOnClickListener(new View.OnClickListener(int x) {
             @Override
             public void onClick(View view) {
                 registrarLogTransaccional(preferencias.getTipoUsuario(), TRANSACCION_MAIN_INGRESAR_CIUDADANO, TRANSACCION_MAIN_INGRESAR_CIUDADANO, TRANSACCION_MAIN_OPCION_MENU_CIUDADANO, btnDatosPersonales.getText().toString(), preferencias.getLatitud(), preferencias.getLongitud());
+                Intent intent= new Intent(contexto, CiudadanoActivity.class);
+                startActivity(intent);
+				registrarLogTransaccional(preferencias.getTipoUsuario(), TRANSACCION_MAIN_INGRESAR_CIUDADANO, TRANSACCION_MAIN_INGRESAR_CIUDADANO, TRANSACCION_MAIN_OPCION_MENU_CIUDADANO, btnDatosPersonales.getText().toString(), preferencias.getLatitud(), preferencias.getLongitud());
                 Intent intent= new Intent(contexto, CiudadanoActivity.class);
                 startActivity(intent);
             }
