@@ -19,3 +19,7 @@ chevere
 es 
 terminar 
 espol
+
+------------------------
+este es el codigo de janina
+-------------------------
