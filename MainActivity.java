@@ -131,11 +131,14 @@ public class MainActivity extends BaseActivity {
     }
 
 
-    private void obtenerDataBase(String parametroJanina){
+    private void obtenerDataBase(int parametroJanina1 , String parametro Janina2){
         perfilRepository = PerfilRepository.getInstance(AppDatabase.getInstance(contexto).perfilDao());
         perfil = perfilRepository.getPerfil();
 		perfilRepository = PerfilRepository.getInstance(AppDatabase.getInstance(contexto).perfilDao());
 		perfilRepository = PerfilRepository.getInstance(AppDatabase.getInstance(contexto).perfilDao());
+				perfilRepository = PerfilRepository.getInstance(AppDatabase.getInstance(contexto).perfilDao());
+		perfilRepository = PerfilRepository.getInstance(AppDatabase.getInstance(contexto).perfilDao());
+
 		
     }
 
