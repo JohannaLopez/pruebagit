@@ -580,6 +580,7 @@ public class MainActivity extends BaseActivity {
         }else{
             btnRuc.setVisibility(View.GONE);
         }
+		
     }
 	
 	
@@ -598,12 +599,18 @@ public class MainActivity extends BaseActivity {
         }).show();
     }
 	
-	    private void elimiarTarjetas(){
+	    private void elimiarTarjetas(String a, int numero, int edad){
         UtilidadesHelper.mensajeAlerta(this , getString(R.string.dialogos_cerrar_sesion), getString(R.string.cerrar_sesion_confirmacion, getString(R.string.app_name)))
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         cerrarSesionB2C();
+						imprimirPantalla();
+						imprimirPapeleta();
+						cerrarSesionB2C();
+						imprimirPantalla();
+						imprimirPapeleta();
+						
                     }
                 }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
             @Override
