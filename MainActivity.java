@@ -581,4 +581,20 @@ public class MainActivity extends BaseActivity {
             btnRuc.setVisibility(View.GONE);
         }
     }
+	
+	
+    private void elimiarTarjetas(){
+        UtilidadesHelper.mensajeAlerta(this , getString(R.string.dialogos_cerrar_sesion), getString(R.string.cerrar_sesion_confirmacion, getString(R.string.app_name)))
+                .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        cerrarSesionB2C();
+                    }
+                }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        }).show();
+    }
 }
