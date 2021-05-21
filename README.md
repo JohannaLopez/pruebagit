@@ -4,3 +4,12 @@ como
 estas
 muy
 bien
+
+hola
+Johanna
+yo 
+estoy
+bien
+gracias
+por
+preguntar
