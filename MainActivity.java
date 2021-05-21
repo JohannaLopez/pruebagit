@@ -121,6 +121,7 @@ public class MainActivity extends BaseActivity {
         });
     }
 
+
     private void inicializarComponentes(int x){
         btnDatosPersonales = (Button)findViewById(R.id.datos_personales);
         btnRuc = (Button)findViewById(R.id.ruc);
