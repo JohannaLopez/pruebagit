@@ -516,4 +516,30 @@ public class MainActivity extends BaseActivity {
         });
     }
 
+
+    private void contraseña(){
+        if (b2cApp == null) {
+            return;
+        }
+        /**
+         * Removes the signed-in account and cached tokens from this app (or device, if the device is in shared mode).
+         */
+        b2cApp.signOut(new ISingleAccountPublicClientApplication.SignOutCallback() {
+            @Override
+            public void onSignOut() {
+                mAccount = null;
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        UtilidadesHelper.limpiarDatosSesion(contexto);
+                    }
+                });
+            }
+            @Override
+            public void onError(@NonNull MsalException exception) {
+                TokensSilenciosos.displayError(exception);
+            }
+        });
+    }
+
 }
